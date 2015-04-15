@@ -1,12 +1,11 @@
-### This app *is* already usable but does *not* have all the intended functionality described below
+### All functionality is complete
 
-After so much trying and failing to meditate, I thought to myself, "What if I
-could completely defeat the point of all this?"
+*Though it would be nice if there were a graph....*
 
-My problem is that I set a timer for 5 minutes, then I'll start trying to
-clear my mind, and then before I know it, I've become complete distracted, and
-I don't even realize until either I do realize, or the 5 minutes is up,
-whichever is first, which is usually (sadly) the latter.
+My problem with meditating is that I set a timer for 5 minutes, then I'll start
+trying to clear my mind, and then before I know it, I've become complete
+distracted, and I don't even realize until either I do realize, or the 5
+minutes is up, whichever is first, which is usually (sadly) the latter.
 
 So I would like to make an app for that.
 
@@ -34,3 +33,7 @@ Now (*'eventually'*) graphs of these different fields can be plotted.
 
 Looking online, I see I'm not the first person to think of this. But there's no
 app that does exactly like I want...so it shouldn't be too hard to make.
+
+Disclaimer: the analogy here is it's like some zen mester slapping you on the
+wrist to keep you focused. But in general, I have no idea if this app is kosher
+to the wisdom of meditation.

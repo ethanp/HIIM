@@ -8,6 +8,8 @@
 
 import Foundation
 class SessionModel {
+    
+    let INCREMENT_SIZE = 1.1
 
     // properties
     var intervalLength = 15
@@ -16,6 +18,31 @@ class SessionModel {
     var successfulSeconds = 0
     var numFailures = 0
     var failingSeconds = 0
+    var intervalsCompleted = 0
+    
+    func totalTime() -> Int {
+        return successfulSeconds + failingSeconds
+    }
+    
+    func success() {
+        intervalsCompleted++
+        numSuccesses++
+        successfulSeconds += intervalLength
+        intervalLength = Int(Double(intervalLength) * INCREMENT_SIZE)
+        successesInARow++
+    }
+    
+    func unsuccess(i: Int) {
+        numFailures++
+        failingSeconds += i
+        intervalLength = Int(Double(intervalLength) / INCREMENT_SIZE)
+        successesInARow = 0
+    }
+    
+    func unsuccess() {
+        intervalsCompleted++
+        unsuccess(intervalLength)
+    }
     
     init() {
     }
